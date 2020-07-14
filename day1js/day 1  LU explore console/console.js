@@ -1,0 +1,10 @@
+console.log(5+6);
+console.log("string");
+console.warn("Danger ahead!!");
+console.error("Mistake pease check!!!!!");
+console.info("message");
+console.assert(document.getElementById("kig"),"you have no element with Id 'kig'");
+console.count();
+console.count("");
+console.count("My Laboratory");
+console.table(["BMW", "Auston Martin", "Mustang"]);
