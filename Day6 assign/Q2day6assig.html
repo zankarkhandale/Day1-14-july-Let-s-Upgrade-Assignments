@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 Q2</title>
+</head>
+<body>
+    <h1> multiplication</h1>
+    <h3></h3>
+    <ul id="list"></ul>
+    <script>
+       let num=window.prompt("enter the value");
+       
+       function multi() {
+           let ke=document.getElementById('list');
+           for (let i = 0; i <11; i++) {
+               let number=[`${num} X ${i} = ${num*i}`]
+               console.log(number)
+               number.forEach(numbers=>{
+                   ke.innerHTML += `<li>${numbers}</li>`
+               })
+               
+           }
+               
+           }
+           
+           
+       
+       multi();
+    </script>
+    
+</body>
+</html>
