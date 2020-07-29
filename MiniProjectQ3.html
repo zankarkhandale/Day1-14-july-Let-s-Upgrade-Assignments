@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        body{color: red;}
+    </style>
+    <script>
+        function Quotes() {
+            var quotes=new Array(10);
+            var sources=new Array(10);
+            // Intiliaze the arrays with quotes
+            quotes[0]="Ideas are the begining points of all fortune.";
+            sources[0]="Napolean Hill";
+
+            quotes[1]="Having nothing, nothing he can lose."; 
+            sources[1]="William Shakesphere";
+
+            quotes[2]="Be the chief but never the Lord."; 
+            sources[2]="Lao Tzu";
+
+            quotes[3]="You can observe a lot just by watching.";
+            sources[3]="Yogi Berra";
+
+            quotes[4]="A house divided against itself cannot stand .";
+            sources[4]="Abraham Lincoln";
+
+            quotes[5]="Nothing happens unless first we dream .";
+            sources[5]="Carl Sandburg.";
+
+            quotes[6]="Well done is better than well said.";
+            sources[6]="Benjamin Franklin.";
+
+            quotes[7]="You will never understand peace, until and unless you know pain."
+            sources[7]="Nagato Uzumaki";
+
+            quotes[8]="You'll see it when you believe it.";
+            sources[8]="Wayne Dyer.";
+
+            quotes[9]="It will be difficult to reach your goal, until and unless you are single minded.";
+            sources[9]="A.P.J .Abdul Kalam.";
+
+            //Getting a random index into array
+            i=Math.floor(Math.random()*quotes.length);
+
+            //Write out the quote as HTML
+            document.write("<p style='background-color:lightblue; text-align:center'>\"");
+            document.write(quotes[i] +"\"");
+            document.write("<em>- " + sources[i] + "<em>");
+            document.write("<p>");
+
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Quotes</h1>
+    <p> To see a random quote please reload this page</p>
+    <script type="text/javascript">
+    Quotes();
+    </script>
+    
+</body>
+</html>
